@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <meta name="description" content="contact page">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="./task.html">Home</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <article>
+            <h1>Contact Me</h1>
+            <form action="/submit_form" method="post">
+                <label for="name">Full name*</label>
+                <input type="text" id="name" name="name" placeholder="Your name..." required>
+                <input type="text" id="lastName" name="lastName" placeholder="Your last name..." required> <br>
+
+                <label for="name">Phone number*</label>
+                <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Your phone..." required> <br>
+
+                <label for="name">Country</label>
+                <select name="country" id="country">
+                    <option value="usa">USA</option>
+                    <option value="arg">Argentina</option>
+                    <option value="canada">Canada</option>
+                    <option value="other">Other</option>
+                </select> <br>
+
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message..."></textarea>
+                <br>
+                <input type="submit" value="submit">
+            </form>
+        </article>
+    </main>
+    <hr>
+
+    <footer>
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="./assets/facebook.png" alt="facebook" width="35">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="./assets/instagram.png" alt="instagram" width="35">
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+            <img src="./assets/linkedin-logo.png" alt="linkedin" width="35">
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+            <img src="./assets/twitter-sign.png" alt="twitter" width="35">
+        </a>
+    </footer>
+
+</body>
+</html>
