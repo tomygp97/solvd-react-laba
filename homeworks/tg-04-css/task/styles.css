@@ -1,8 +1,6 @@
 body {
     background-color: #E9EBEC;
     font-family: 'Poppins';
-    /* width: 1728px;
-    height: 1999px; */
 }
 
 .container {
@@ -65,13 +63,13 @@ footer {
 .profile-info h1 {
     font-weight: 500;
     font-size: 46px;
-    /* line-height: 69px; */
+    line-height: 69px;
     color: rgba(61, 61, 61, 1);
 }
 .profile-info p {
     font-weight: 500;
     font-size: 22px;
-    /* line-height: 33px; */
+    line-height: 33px;
     color: rgba(61, 61, 61, 1);
 }
 
@@ -104,28 +102,29 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 47px;
-    /* width: 618px; */
     height: 80px;
     gap: 38px;
-    font-size: 22px;
-    line-height: 33px;
     color: rgba(61, 61, 61, 1);
-    /* background-color: red; */
 }
 
 .download-cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 0;
     border-radius: 10px;
     background-color: rgba(251, 209, 68, 1);
     width: 290px;
     height: 80px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 22px;
+    line-height: 33px;
 }
 
 .download-cv a {
     text-decoration: none;
     color: inherit;
-    font-size: 22px;
-    line-height: 33px;
 }
 
 .download-cv img {
@@ -149,7 +148,6 @@ footer {
 .tabs-container {
     margin-top: 47px;
     height: 132px;
-    /* width: 760px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,6 +184,24 @@ footer {
     font-size: 22px;
     line-height: 33px;
     font-weight: 500;
+}
+
+.tabs-content {
+    width: 760px;
+    height: 826px;
+    margin: 47px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+}
+
+.tabs-content img {
+    width: 362px;
+    height: 226px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 footer {
