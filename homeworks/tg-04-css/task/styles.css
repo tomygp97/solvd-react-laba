@@ -1,6 +1,12 @@
 body {
     background-color: #E9EBEC;
     font-family: 'Poppins';
+
+    transition: background-color 0.3s ease, color 0.3s ease;;
+}
+
+.dark-mode {
+    background-color: rgba(12, 21, 29, 1);
 }
 
 .container {
@@ -56,7 +62,6 @@ footer {
 }
 
 .profile-info {
-    color: rgba(87, 87, 87, 1);
     margin-left: 44px;
 }
 
@@ -66,6 +71,11 @@ footer {
     line-height: 69px;
     color: rgba(61, 61, 61, 1);
 }
+
+.dark-mode .profile-info h1 {
+    color: rgba(241, 242, 244, 1);
+}
+
 .profile-info p {
     font-weight: 500;
     font-size: 22px;
@@ -73,9 +83,16 @@ footer {
     color: rgba(61, 61, 61, 1);
 }
 
+.dark-mode .profile-info p {
+    color: rgba(163, 171, 178, 1);
+}
+
 .social-media {
     display: inline-flex;
     gap: 26px;
+}
+.dark-mode .social-media  img{
+    filter: invert(100%);
 }
 
 .profile-facts {
@@ -90,6 +107,10 @@ footer {
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
+}
+
+.dark-mode .profile-facts {
+    color: rgba(163, 171, 178, 1);
 }
 
 .profile-facts p {
@@ -144,6 +165,10 @@ footer {
     width: 290px;
     height: 80px;
 }
+.dark-mode .contact-me {
+    color: rgba(163, 171, 178, 1);
+    background-color: rgba(23, 31, 38, 1);
+}
 
 .tabs-container {
     margin-top: 47px;
@@ -163,6 +188,11 @@ footer {
     height: 110px;
 }
 
+.dark-mode .btn-container {
+    background-color: rgba(23, 31, 38, 1);
+}
+
+
 .portfolio-btn {
     margin-left: 23px;
     border: 0;
@@ -172,6 +202,11 @@ footer {
     font-size: 22px;
     line-height: 33px;
     font-weight: 500;
+}
+
+.dark-mode .portfolio-btn {
+    background-color: rgba(12, 21, 29, 1);
+    color: rgba(163, 171, 178, 1);
 }
 
 .skills-btn {
@@ -184,6 +219,11 @@ footer {
     font-size: 22px;
     line-height: 33px;
     font-weight: 500;
+}
+
+.dark-mode .skills-btn {
+    background-color: rgba(23, 31, 38, 1);
+    color: rgba(163, 171, 178, 1);
 }
 
 .tabs-content {
@@ -212,4 +252,10 @@ footer {
     font-size: 22px;
     line-height: 33px;
     margin-top: 113px;
+    margin-bottom: 47px;
 }
+
+.dark-mode footer {
+    color: rgba(163, 171, 178, 1);
+}
+
