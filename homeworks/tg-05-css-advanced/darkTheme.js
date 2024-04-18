@@ -7,3 +7,28 @@ document.addEventListener("DOMContentLoaded", function() {
         
     });
 });
+
+// Active class to Portfolio/Skills btn
+document.addEventListener('DOMContentLoaded', function() {
+    let buttons = document.querySelectorAll('.tab-btn');
+    let backgroundIndicator = document.querySelector('.background-indicator');
+
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            // Remove active class
+            buttons.forEach(function(btn) {
+                btn.classList.remove('active');            
+            });
+            // Add active class
+            this.classList.add('active');
+            // Move background-indicator to active button
+            let leftPosition = this.offsetLeft;
+            backgroundIndicator.style.left = leftPosition + 'px';
+        });
+    });
+    // Start background-indicator position
+    let activeBtn = document.querySelector('.tab-btn.active');
+    if (activeBtn) {
+        backgroundIndicator.style.left = activeBtn.offsetLeft + 'px';
+    };
+});
