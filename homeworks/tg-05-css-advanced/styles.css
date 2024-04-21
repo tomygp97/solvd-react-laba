@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background-color: #E9EBEC;
     font-family: 'Poppins';
@@ -54,19 +59,14 @@ body {
     background-color: #E9EBEC;
 }
 
-.profile-section {
+.profile {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 65px;
 }
 
-* {
-    padding: 0;
-    margin: 0;
-}
-
-.profile-picture {
+.profile__picture {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -78,47 +78,47 @@ body {
     border: 4px solid rgba(247, 208, 57, 1);
 }
 
-.profile-img {
+.profile__img {
     width: 192px;
     height: 192px;
 }
 
-.profile-info {
+.profile__info {
     margin-left: 44px;
 }
 
-.profile-info h1 {
+.profile__info h1 {
     font-weight: 500;
     font-size: 46px;
     line-height: 69px;
     color: rgba(61, 61, 61, 1);
 }
 
-.dark-mode .profile-info h1 {
+.dark-mode .profile__info h1 {
     color: rgba(241, 242, 244, 1);
 }
 
-.profile-info p {
+.profile__info p {
     font-weight: 500;
     font-size: 22px;
     line-height: 33px;
     color: rgba(61, 61, 61, 1);
 }
 
-.dark-mode .profile-info p {
+.dark-mode .profile__info p {
     color: rgba(163, 171, 178, 1);
 }
 
-.social-media {
+.profile__social-media {
     display: inline-flex;
     gap: 26px;
 }
 
-.dark-mode .social-media  img{
+.dark-mode .profile__social-media  img{
     filter: invert(100%);
 }
 
-.profile-facts {
+.profile__facts {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,16 +132,16 @@ body {
     line-height: 36px;
 }
 
-.dark-mode .profile-facts {
+.dark-mode .profile__facts {
     color: rgba(163, 171, 178, 1);
 }
 
-.profile-facts p {
+.profile__facts p {
     font-size: 22px;
     line-height: 33px;
 }
 
-.profile-buttons-container {
+.profile__buttons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,7 +151,7 @@ body {
     color: rgba(61, 61, 61, 1);
 }
 
-.download-cv {
+.buttons__download-cv {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,24 +166,24 @@ body {
     line-height: 33px;
 }
 
-.download-cv a {
+.buttons__download-cv a {
     text-decoration: none;
     color: inherit;
 }
 
-.download-cv img {
+.buttons__download-cv img {
     margin-left: 1rem;
 }
 
-.download-cv:hover {
+.buttons__download-cv:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
     animation: right 0.1s ease 2;
 }
-.dark-mode .download-cv:hover {
+.buttons__dark-mode .download-cv:hover {
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
 }
 
-.contact-me {
+.buttons__contact-me {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,20 +193,20 @@ body {
     height: 80px;
 }
 
-.contact-me:hover {
+.buttons__contact-me:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-.dark-mode .contact-me {
+.dark-mode .buttons__contact-me {
     color: rgba(163, 171, 178, 1);
     background-color: rgba(23, 31, 38, 1);
 }
 
-.dark-mode .contact-me:hover {
+.dark-mode .buttons__contact-me:hover {
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
 }
 
-.tabs-container {
+.tabs {
     margin-top: 47px;
     height: 132px;
     display: flex;
@@ -214,7 +214,7 @@ body {
     align-items: center;
 }
 
-.btn-container {
+.tabs__container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,20 +225,20 @@ body {
     height: 110px;
 }
 
-.dark-mode .btn-container {
+.dark-mode .tabs__container {
     background-color: rgba(23, 31, 38, 1);
 }
 
-.background-indicator {
+.tabs__background-indicator {
     position: absolute;
     background-color: #E9EBEC;
 }
 
-.tab-btn {
+.tabs__btn {
     transition: background-color 0.6s ease;
 }
 
-.portfolio-btn {
+.tabs__btn__portfolio {
     margin-left: 23px;
     border: 0;
     border-radius: 10px;
@@ -251,12 +251,12 @@ body {
     z-index: 2;
 }
 
-.dark-mode .portfolio-btn {
+.dark-mode .tabs__btn__portfolio {
     background-color: rgba(23, 31, 38, 1);
     color: rgba(163, 171, 178, 1);
 }
 
-.skills-btn {
+.tabs__btn__skills {
     margin-right: 23px;
     border: 0;
     border-radius: 10px;
@@ -269,7 +269,7 @@ body {
     z-index: 2;
 }
 
-.dark-mode .skills-btn {
+.dark-mode .tabs__btn__skills {
     background-color: rgba(23, 31, 38, 1);
     color: rgba(163, 171, 178, 1);
 }
@@ -282,7 +282,7 @@ body {
     background-color: rgba(12, 21, 29, 1);
 }
 
-.tabs-content {
+.tabs__content {
     width: 760px;
     height: 826px;
     margin: 47px auto 0;
@@ -293,18 +293,18 @@ body {
     gap: 33px;
 }
 
-.tabs-content img {
+.tabs__content img {
     width: 362px;
     height: 226px;
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.tabs-content img:hover {
+.tabs__content img:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-.dark-mode .tabs-content img:hover {
+.dark-mode .tabs__content img:hover {
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.6);
 }
 

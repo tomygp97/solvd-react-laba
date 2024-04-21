@@ -4,14 +4,14 @@ document.addEventListener("DOMContentLoaded", function() {
     darkModeButton.addEventListener("click", function() {
 
         document.body.classList.toggle("dark-mode");
-        
+
     });
 });
 
 // Active class to Portfolio/Skills btn
 document.addEventListener('DOMContentLoaded', function() {
-    let buttons = document.querySelectorAll('.tab-btn');
-    let backgroundIndicator = document.querySelector('.background-indicator');
+    let buttons = document.querySelectorAll('.tabs__btn');
+    let backgroundIndicator = document.querySelector('.tabs__background-indicator');
 
     buttons.forEach(function(button) {
         button.addEventListener('click', function() {
