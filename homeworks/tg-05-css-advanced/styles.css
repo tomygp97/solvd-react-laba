@@ -322,3 +322,240 @@ footer {
 .dark-mode footer {
     color: rgba(163, 171, 178, 1);
 }
+
+.scroll-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 10px 20px;
+    background-color: rgba(255, 221, 51, 1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.scroll-to-top-btn:hover {
+    /* background-color: rgba(255, 233, 51, 1); */
+    background-color: rgba(255, 237, 0, 1);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .container {
+        padding: 20px 0px 40px 0px;
+    }
+
+    #dark-mode-button {
+        width: 48px;
+        height: 48px;
+    }
+
+    #dark-mode-button img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .profile {
+        flex-direction: column;
+        margin-top: 0;
+        padding: 0px, 2px, 0px, 2px;
+    }
+
+    .profile__info {
+        text-align: center;
+    }
+
+    .profile__picture {
+        width: 124px;
+        height: 124px;
+        margin-bottom: 40px;
+    }
+
+    .profile__img {
+        width: 107px;
+        height: 107px;
+    }
+
+    .profile__img img {
+        width: 107px;
+        height: 107px;
+    }
+
+    .profile__info {
+        width: 372px;
+        margin-left: 0;
+    }
+
+    .profile__info h1 {
+        height: 48px;
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 0;
+    }
+
+    .profile__info p {
+        height: 21px;
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 0;
+    }
+
+    .profile__social-media {
+        width: 174px;
+        margin-top: 0;
+    }
+
+    .profile__social-media img{
+        width: 24px;
+        height: 24px;
+    }
+
+    .profile__facts {
+        justify-content: space-between;
+        gap: 0;
+        padding: 20px;
+        margin-top: 0;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+    }
+
+    .profile__facts p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .profile__buttons {
+        margin-top: 0;
+        height: 80px;
+        gap: 14px;
+        padding: 18px 20px;
+    }
+    
+    .buttons__download-cv {
+        width: 158px;
+        height: 44px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    
+    .buttons__download-cv img {
+        width: 16px;
+        height: 14px;
+    }
+
+    .buttons__contact-me {
+        font-size: 12px;
+        line-height: 18px;
+        width: 158px;
+        height: 44px;
+    }
+
+    .tabs {
+        margin-top: 0;
+        height: 84px;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+    
+    .tabs__container {
+        gap: 9px;
+        width: 330px;
+        border-radius: 10px;
+        height: 64px;
+    } 
+
+    .tabs__btn__portfolio {
+        margin-left: 6px;
+        margin-left: 6px;
+        height: 50px;
+        width: 154px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .tabs__btn__skills {
+        margin-right: 6px;
+        height: 50px;
+        width: 154px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .tabs__content {
+        padding: 0 20px 20px 20px;
+        width: auto;
+        height: auto;
+        margin: 10px 0;
+        gap: 30px;
+    }
+    
+    .tabs__content img {
+        width: 340px;
+        height: 210px;
+        border-radius: 15px;
+    }
+
+    footer {
+        font-size: 14px;
+        line-height: 21px;
+        padding: 20px 0 40px 0;
+        margin: 0;
+    }
+
+    .scroll-to-top-btn {
+        display: block;
+    }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width:1024px) {
+
+    .profile {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .profile__info {
+        text-align: center;
+    }
+
+    .profile__info h1 {
+        margin-bottom: 0;
+    }
+
+    .profile__info p {
+        margin-top: 0;
+    }
+
+    .profile__facts {
+        padding: 20px;
+    }
+
+    .tabs__content {
+        width: auto;
+        height: auto;
+        margin: 20px;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 33px;
+    }
+    
+    .tabs__content img {
+        height: auto;
+        border-radius: 15px;
+    }
+
+    footer {
+        font-size: 14px;
+        line-height: 21px;
+        padding: 20px 0 40px 0;
+        margin: 0;
+    }    
+}

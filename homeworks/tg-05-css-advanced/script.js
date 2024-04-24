@@ -32,3 +32,15 @@ document.addEventListener('DOMContentLoaded', function() {
         backgroundIndicator.style.left = activeBtn.offsetLeft + 'px';
     };
 });
+
+// Scroll to top btn
+document.addEventListener('DOMContentLoaded', function() {
+    let scrollToTopBtn = document.querySelector(".scroll-to-top-btn");
+
+    scrollToTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
